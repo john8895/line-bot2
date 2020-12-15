@@ -8,7 +8,7 @@ let bot = linebot({
 
 bot.on('message', function (event) {
 
-    event.reply(`${event}`)
+    event.reply(`你說了 ${event.message.text}`)
 })
 
 bot.listen('/', process.env.PORT || 5000, function () {
