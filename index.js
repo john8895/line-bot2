@@ -8,7 +8,7 @@ let bot = linebot({
 
 bot.on('message', function (event) {
     const userMsg = event.message.text
-    if(userMsg.indexOf('#訂餐')){
+    if(userMsg.indexOf('#訂餐') > -1){
         event.reply(`訂餐`)
     }
 
