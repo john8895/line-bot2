@@ -7,8 +7,11 @@ let bot = linebot({
 })
 
 bot.on('message', function (event) {
+    const userMsg = event.message.text
+    if(userMsg.indexOf('#訂餐')){
+        event.reply(`訂餐`)
+    }
 
-    event.reply(`你說了 ${event.message.text}`)
 })
 
 bot.listen('/', process.env.PORT || 5000, function () {
