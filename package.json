@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "linebot": "^1.6.1"
+    "linebot": "^1.6.1",
+    "mysql": "^2.18.1"
   }
 }
